@@ -7,6 +7,11 @@ python query_family_dir.py query_id.txt query_family.txt /path/to/output#if omit
 chmod +x seqkit.sh
 ./seqkit.sh /path/to/id_directory /path/to/fasta_file
 ```
+# combined.sh
+```bash
+chmod +x seqkit.sh
+./combined.sh /path/to/our_faa /path/to/background [/path/to/combined]#The output directory will default to our_background_combined folder in the current directory
+```
 # tree.sh
 ```bash
 chmod +x tree.sh
