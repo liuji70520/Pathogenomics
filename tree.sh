@@ -16,8 +16,6 @@ if [ ! -d "$input_dir" ]; then
     exit 1
 fi
 
-# 设置工作目录为当前目录
-cd "$(dirname "$0")"
 
 # 定义输出目录，如果不存在则创建
 output_dir="./tree_out"
