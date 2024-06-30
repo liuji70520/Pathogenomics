@@ -5,7 +5,7 @@ python query_family_dir.py query_id.txt query_family.txt /path/to/output#if omit
 # seqkit.sh
 ```bash
 chmod +x seqkit.sh
-./seqkit.sh /path/to/id_directory /path/to/fasta_file
+./seqkit.sh ./ /path/to/fasta_file#you should go to our_faa directory
 ```
 # combined.sh
 ```bash
