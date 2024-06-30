@@ -17,3 +17,7 @@ chmod +x seqkit.sh
 chmod +x tree.sh
 ./tree.sh /path/to/input_dir /path/to/desired_output_dir#If you provide only the input directory, the output will be saved in the tree_out folder under the current directory by default
 ```
+# work 
+```bash
+myqsub 8 10G "tree.sh /path/to/input_dir /path/to/desired_output_dir"
+```
