@@ -23,9 +23,6 @@ mkdir -p "$combined_dir"
 # 清空日志文件，准备写入新内容
 > "$log_file"
 
-# 切换到当前脚本的工作目录
-cd "$(dirname "$0")"
-
 # 遍历our_faa目录下的所有文件夹
 for family_dir in "$our_faa_dir"/*/; do
     family_name=$(basename "$family_dir")
@@ -33,7 +30,7 @@ for family_dir in "$our_faa_dir"/*/; do
     # 检查是否有匹配的背景序列文件
     found=false
     for background_file in "$background_dir"/*.faa; do
-        if [[ "$(basename "$background_file")" == *"$family_name"* ]]; then
+        if [[ "$(basename "$background_file")" == "$family_name.faa" ]]; then  # 确保文件名完全匹配
             found=true
             output_file="$combined_dir/$family_name.faa"
             
